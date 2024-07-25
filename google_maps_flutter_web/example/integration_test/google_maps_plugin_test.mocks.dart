@@ -51,6 +51,7 @@ class MockGoogleMapController extends _i1.Mock
   @override
   void debugSetOverrides(
           {_i4.DebugCreateMapFunction? createMap,
+          _i4.GroundOverlaysController? groundOverlays,
           _i4.MarkersController? markers,
           _i4.CirclesController? circles,
           _i4.PolygonsController? polygons,

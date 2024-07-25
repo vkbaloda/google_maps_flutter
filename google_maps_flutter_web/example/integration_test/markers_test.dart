@@ -14,6 +14,7 @@ import 'package:google_maps_flutter_platform_interface/google_maps_flutter_platf
 import 'package:google_maps_flutter_web/google_maps_flutter_web.dart';
 import 'package:http/http.dart' as http;
 import 'package:integration_test/integration_test.dart';
+import 'package:web/src/dom/html.dart';
 
 import 'resources/icon_image_base64.dart';
 
@@ -28,7 +29,7 @@ void main() {
     setUp(() {
       events = StreamController<MapEvent<Object?>>();
       controller = MarkersController(stream: events);
-      map = gmaps.GMap(html.DivElement());
+      map = gmaps.GMap(HTMLDivElement());
       controller.bindToMap(123, map);
     });
 

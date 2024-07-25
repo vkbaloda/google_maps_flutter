@@ -293,6 +293,7 @@ class GoogleMapsPlugin extends GoogleMapsFlutterPlatform {
     int creationId,
     PlatformViewCreatedCallback onPlatformViewCreated, {
     required CameraPosition initialCameraPosition,
+    Set<GroundOverlay> groundOverlays = const <GroundOverlay>{},
     Set<Marker> markers = const <Marker>{},
     Set<Polygon> polygons = const <Polygon>{},
     Set<Polyline> polylines = const <Polyline>{},
@@ -315,6 +316,7 @@ class GoogleMapsPlugin extends GoogleMapsFlutterPlatform {
       mapId: creationId,
       streamController: controller,
       markers: markers,
+      groundOverlays: groundOverlays,
       polygons: polygons,
       polylines: polylines,
       circles: circles,

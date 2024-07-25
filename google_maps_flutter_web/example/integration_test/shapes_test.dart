@@ -12,6 +12,7 @@ import 'package:google_maps/google_maps_geometry.dart' as geometry;
 import 'package:google_maps_flutter_platform_interface/google_maps_flutter_platform_interface.dart';
 import 'package:google_maps_flutter_web/google_maps_flutter_web.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:web/src/dom/html.dart';
 
 // This value is used when comparing the results of
 // converting from a byte value to a double between 0 and 1.
@@ -25,7 +26,7 @@ void main() {
   late gmaps.GMap map;
 
   setUp(() {
-    map = gmaps.GMap(html.DivElement());
+    map = gmaps.GMap(HTMLDivElement());
   });
 
   group('CirclesController', () {

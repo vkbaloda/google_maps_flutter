@@ -329,6 +329,16 @@ gmaps.PolygonOptions _polygonOptionsFromPolygon(
     ..geodesic = polygon.geodesic;
 }
 
+/// Creates [gmaps.GroundOverlayOptions] from a [GroundOverlay] object.
+gmaps.GroundOverlayOptions _groundOverlayOptionsFromGroundOverlay(
+  gmaps.GMap googleMap,
+  GroundOverlay groundOverlay,
+) {
+  return gmaps.GroundOverlayOptions()
+    ..clickable = false
+    ..opacity = groundOverlay.transparency;
+}
+
 List<gmaps.LatLng> _ensureHoleHasReverseWinding(
   List<LatLng> hole,
   bool polyIsClockwise, {

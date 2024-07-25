@@ -9,6 +9,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:google_maps/google_maps.dart' as gmaps;
 import 'package:google_maps_flutter_web/google_maps_flutter_web.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:web/src/dom/html.dart';
 
 /// Test Markers
 void main() {
@@ -120,7 +121,7 @@ void main() {
 
     testWidgets('showInfoWindow', (WidgetTester tester) async {
       final gmaps.InfoWindow infoWindow = gmaps.InfoWindow();
-      final gmaps.GMap map = gmaps.GMap(html.DivElement());
+      final gmaps.GMap map = gmaps.GMap(HTMLDivElement());
       marker.set('map', map);
       final MarkerController controller = MarkerController(
         marker: marker,
@@ -135,7 +136,7 @@ void main() {
 
     testWidgets('hideInfoWindow', (WidgetTester tester) async {
       final gmaps.InfoWindow infoWindow = gmaps.InfoWindow();
-      final gmaps.GMap map = gmaps.GMap(html.DivElement());
+      final gmaps.GMap map = gmaps.GMap(HTMLDivElement());
       marker.set('map', map);
       final MarkerController controller = MarkerController(
         marker: marker,
@@ -153,7 +154,7 @@ void main() {
 
       setUp(() {
         final gmaps.InfoWindow infoWindow = gmaps.InfoWindow();
-        final gmaps.GMap map = gmaps.GMap(html.DivElement());
+        final gmaps.GMap map = gmaps.GMap(HTMLDivElement());
         marker.set('map', map);
         controller = MarkerController(marker: marker, infoWindow: infoWindow);
       });

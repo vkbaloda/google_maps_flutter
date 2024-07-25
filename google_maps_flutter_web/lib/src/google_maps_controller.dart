@@ -16,6 +16,7 @@ class GoogleMapController {
     required int mapId,
     required StreamController<MapEvent<Object?>> streamController,
     required CameraPosition initialCameraPosition,
+    Set<GroundOverlay> groundOverlays = const <GroundOverlay>{},
     Set<Marker> markers = const <Marker>{},
     Set<Polygon> polygons = const <Polygon>{},
     Set<Polyline> polylines = const <Polyline>{},
@@ -24,6 +25,7 @@ class GoogleMapController {
   })  : _mapId = mapId,
         _streamController = streamController,
         _initialCameraPosition = initialCameraPosition,
+        _groundOverlays = groundOverlays,
         _markers = markers,
         _polygons = polygons,
         _polylines = polylines,
@@ -33,6 +35,8 @@ class GoogleMapController {
     _polygonsController = PolygonsController(stream: _streamController);
     _polylinesController = PolylinesController(stream: _streamController);
     _markersController = MarkersController(stream: _streamController);
+    _groundOverlaysController =
+        GroundOverlaysController(stream: _streamController);
 
     // Register the view factory that will hold the `_div` that holds the map in the DOM.
     // The `_div` needs to be created outside of the ViewFactory (and cached!) so we can
@@ -53,6 +57,7 @@ class GoogleMapController {
 
   final CameraPosition _initialCameraPosition;
   final Set<Marker> _markers;
+  final Set<GroundOverlay> _groundOverlays;
   final Set<Polygon> _polygons;
   final Set<Polyline> _polylines;
   final Set<Circle> _circles;
@@ -102,6 +107,7 @@ class GoogleMapController {
   PolygonsController? _polygonsController;
   PolylinesController? _polylinesController;
   MarkersController? _markersController;
+  GroundOverlaysController? _groundOverlaysController;
   // Keeps track if _attachGeometryControllers has been called or not.
   bool _controllersBoundToMap = false;
 
@@ -113,12 +119,14 @@ class GoogleMapController {
   void debugSetOverrides({
     DebugCreateMapFunction? createMap,
     MarkersController? markers,
+    GroundOverlaysController? groundOverlays,
     CirclesController? circles,
     PolygonsController? polygons,
     PolylinesController? polylines,
   }) {
     _overrideCreateMap = createMap;
     _markersController = markers ?? _markersController;
+    _groundOverlaysController = groundOverlays ?? _groundOverlaysController;
     _circlesController = circles ?? _circlesController;
     _polygonsController = polygons ?? _polygonsController;
     _polylinesController = polylines ?? _polylinesController;
@@ -130,7 +138,7 @@ class GoogleMapController {
     if (_overrideCreateMap != null) {
       return _overrideCreateMap!(div, options);
     }
-    return gmaps.GMap(div, options);
+    return gmaps.GMap(div as HTMLElement?, options); // TODO check type
   }
 
   /// A flag that returns true if the controller has been initialized or not.
@@ -172,6 +180,7 @@ class GoogleMapController {
     // Now attach the geometry, traffic and any other layers...
     _renderInitialGeometry(
       markers: _markers,
+      groundOverlays: _groundOverlays,
       circles: _circles,
       polygons: _polygons,
       polylines: _polylines,
@@ -229,11 +238,14 @@ class GoogleMapController {
         'Cannot attach a map to a null PolylinesController instance.');
     assert(_markersController != null,
         'Cannot attach a map to a null MarkersController instance.');
+    assert(_groundOverlaysController != null,
+        'Cannot attach a map to a null GroundOverlaysController instance.');
 
     _circlesController!.bindToMap(_mapId, map);
     _polygonsController!.bindToMap(_mapId, map);
     _polylinesController!.bindToMap(_mapId, map);
     _markersController!.bindToMap(_mapId, map);
+    _groundOverlaysController!.bindToMap(_mapId, map);
 
     _controllersBoundToMap = true;
   }
@@ -241,6 +253,7 @@ class GoogleMapController {
   // Renders the initial sets of geometry.
   void _renderInitialGeometry({
     Set<Marker> markers = const <Marker>{},
+    Set<GroundOverlay> groundOverlays = const <GroundOverlay>{},
     Set<Circle> circles = const <Circle>{},
     Set<Polygon> polygons = const <Polygon>{},
     Set<Polyline> polylines = const <Polyline>{},
@@ -255,6 +268,7 @@ class GoogleMapController {
     // controllers below are *not* null.
 
     _markersController!.addMarkers(markers);
+    _groundOverlaysController!.addGroundOverlays(groundOverlays);
     _circlesController!.addCircles(circles);
     _polygonsController!.addPolygons(polygons);
     _polylinesController!.addPolylines(polylines);
@@ -380,6 +394,17 @@ class GoogleMapController {
     _polylinesController?.removePolylines(updates.polylineIdsToRemove);
   }
 
+  /// Applies [GroundOverlayUpdates] to the currently managed lines.
+  void updateGroundOverlays(GroundOverlayUpdates updates) {
+    assert(_groundOverlaysController != null,
+        'Cannot update groundOverlays after dispose().');
+    _groundOverlaysController?.addGroundOverlays(updates.groundOverlaysToAdd);
+    _groundOverlaysController
+        ?.changeGroundOverlays(updates.groundOverlaysToChange);
+    _groundOverlaysController
+        ?.removeGroundOverlays(updates.groundOverlayIdsToRemove);
+  }
+
   /// Applies [MarkerUpdates] to the currently managed markers.
   void updateMarkers(MarkerUpdates updates) {
     assert(
@@ -421,6 +446,7 @@ class GoogleMapController {
     _polygonsController = null;
     _polylinesController = null;
     _markersController = null;
+    _groundOverlaysController = null;
     _streamController.close();
   }
 }

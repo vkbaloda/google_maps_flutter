@@ -18,7 +18,10 @@ dev_dependencies:
     sdk: flutter
   flutter_test:
     sdk: flutter
-  google_maps: ^6.1.0
+  google_maps: #^6.1.0
+    git:
+      url: https://github.com/ditman/a14n-dart-google-maps.git
+      ref: master
   google_maps_flutter: # Used for projection_test.dart
     path: ../../google_maps_flutter
   http: ^0.13.0

@@ -19,6 +19,7 @@ import 'package:google_maps/google_maps.dart' as gmaps;
 import 'package:google_maps_flutter_platform_interface/google_maps_flutter_platform_interface.dart';
 import 'package:sanitize_html/sanitize_html.dart';
 import 'package:stream_transform/stream_transform.dart';
+import 'package:web/src/dom/html.dart';
 
 import 'src/shims/dart_ui.dart' as ui; // Conditionally imports dart:ui in web
 import 'src/third_party/to_screen_location/to_screen_location.dart';
@@ -31,6 +32,8 @@ part 'src/google_maps_controller.dart';
 part 'src/google_maps_flutter_web.dart';
 part 'src/marker.dart';
 part 'src/markers.dart';
+part 'src/ground_overlay.dart';
+part 'src/ground_overlays.dart';
 part 'src/polygon.dart';
 part 'src/polygons.dart';
 part 'src/polyline.dart';
