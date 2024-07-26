@@ -32,6 +32,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "csslib",
+      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8",
       "packageUri": "lib/",
@@ -80,10 +86,22 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///C:/src2/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "fuchsia_remote_debug_protocol",
       "rootUri": "file:///C:/src2/flutter/packages/fuchsia_remote_debug_protocol",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "google_maps",
+      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/git/a14n-dart-google-maps-717fe1d0951a23b54263e89826f52aa8ad772318/",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "google_maps_flutter",
@@ -98,10 +116,34 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "google_maps_flutter_web",
+      "rootUri": "../../../google_maps_flutter_web",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "html",
+      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "integration_test",
       "rootUri": "file:///C:/src2/flutter/packages/integration_test",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "js_wrapping",
+      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/js_wrapping-0.7.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "leak_tracker",
@@ -162,6 +204,12 @@
       "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/process-5.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "sanitize_html",
+      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/sanitize_html-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
@@ -230,6 +278,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "web",
+      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/web-0.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
       "name": "webdriver",
       "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/webdriver-3.0.3",
       "packageUri": "lib/",
@@ -242,7 +296,7 @@
       "languageVersion": "2.14"
     }
   ],
-  "generated": "2024-07-25T11:14:15.728073Z",
+  "generated": "2024-07-25T20:09:30.165201Z",
   "generator": "pub",
   "generatorVersion": "3.3.3"
 }

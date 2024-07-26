@@ -572,7 +572,8 @@ class MethodChannelGoogleMapsFlutter extends GoogleMapsFlutterPlatform {
     }
 
     return Text(
-        '$defaultTargetPlatform is not yet supported by the maps plugin');
+      '${kIsWeb ? "web" : defaultTargetPlatform} is not yet supported by the maps plugin',
+    );
   }
 
   @override
