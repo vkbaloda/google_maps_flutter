@@ -84,9 +84,11 @@ packages:
   google_maps_flutter_platform_interface:
     dependency: "direct main"
     description:
-      path: "../google_maps_flutter_platform_interface"
-      relative: true
-    source: path
+      path: google_maps_flutter_platform_interface
+      ref: web_overlay
+      resolved-ref: c3715c6185e03fd991d293aecf157c11885f439d
+      url: "https://github.com/vkbaloda/google_maps_flutter.git"
+    source: git
     version: "2.2.0"
   html:
     dependency: transitive

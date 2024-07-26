@@ -26,7 +26,11 @@ dependencies:
       url: https://github.com/ditman/a14n-dart-google-maps.git
       ref: master
   google_maps_flutter_platform_interface: #^2.1.2
-    path: ../google_maps_flutter_platform_interface
+#    path: ../google_maps_flutter_platform_interface
+    git:
+      url: https://github.com/vkbaloda/google_maps_flutter.git
+      path: google_maps_flutter_platform_interface
+      ref: web_overlay
   sanitize_html: ^2.0.0
   stream_transform: ^2.0.0
 
