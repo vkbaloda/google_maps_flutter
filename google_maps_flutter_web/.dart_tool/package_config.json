@@ -3,69 +3,63 @@
   "packages": [
     {
       "name": "async",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.12.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "boolean_selector",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.1"
     },
     {
       "name": "characters",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.3.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.4"
     },
     {
       "name": "clock",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/clock-1.1.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/clock-1.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.4"
     },
     {
       "name": "collection",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "csslib",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-0.17.2",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-0.17.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "fake_async",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.3"
     },
     {
       "name": "flutter",
-      "rootUri": "file:///C:/src2/flutter/packages/flutter",
+      "rootUri": "file:///C:/src/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.7"
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///C:/src2/flutter/packages/flutter_test",
+      "rootUri": "file:///C:/src/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.7"
     },
     {
       "name": "flutter_web_plugins",
-      "rootUri": "file:///C:/src2/flutter/packages/flutter_web_plugins",
+      "rootUri": "file:///C:/src/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
-    },
-    {
-      "name": "google_maps",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/git/a14n-dart-google-maps-717fe1d0951a23b54263e89826f52aa8ad772318/",
-      "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.7"
     },
     {
       "name": "google_maps_flutter_platform_interface",
@@ -75,139 +69,121 @@
     },
     {
       "name": "html",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "js",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.16"
-    },
-    {
-      "name": "js_wrapping",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/js_wrapping-0.7.4",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "leak_tracker",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.8",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_flutter_testing",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-2.0.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.9",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_testing",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-2.0.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.2"
     },
     {
       "name": "matcher",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16+1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.17",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.4"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.8.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "meta",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.11.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.4"
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.2",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "sanitize_html",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/sanitize_html-2.0.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/sanitize_html-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///C:/src2/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///C:/src/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.7"
     },
     {
       "name": "source_span",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.1"
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.11.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.12.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/stream_channel-2.1.2",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/stream_channel-2.1.4",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.3"
     },
     {
       "name": "stream_transform",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/stream_transform-2.0.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/stream_transform-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.2.0",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.1"
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.1"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.6.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.4",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.5"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-13.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
-      "name": "web",
-      "rootUri": "file:///C:/Users/kumar/AppData/Local/Pub/Cache/hosted/pub.dev/web-0.5.1",
+      "rootUri": "file:///C:/Users/sk/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.3.1",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -218,7 +194,10 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-07-25T12:14:47.864793Z",
+  "generated": "2025-05-07T19:12:41.756408Z",
   "generator": "pub",
-  "generatorVersion": "3.3.3"
+  "generatorVersion": "3.7.2",
+  "flutterRoot": "file:///C:/src/flutter",
+  "flutterVersion": "3.29.3",
+  "pubCache": "file:///C:/Users/sk/AppData/Local/Pub/Cache"
 }
